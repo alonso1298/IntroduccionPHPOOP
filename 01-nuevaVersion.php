@@ -11,16 +11,23 @@ class Producto {
     {
 
     }
+    
+    // Metodos en clases
+    public function mostrarProducto() {
+        echo 'El producto es: ' . $this->nombre . ' y su precio es de: ' . $this->precio;
+    }
 }
 
 $producto = new Producto('Tablet', 200, true);
+$producto->mostrarProducto(); // La sintaxis de flecha es igual para metodos propiedades
 
 echo '<pre>';
 var_dump($producto);
 echo '</pre>';
 
-// Se puede instanciar multiples productos
 $producto2 = new Producto('Montor Curvo', 400, false);
+
+$producto2->mostrarProducto();
 
 echo '<pre>';
 var_dump($producto2);
