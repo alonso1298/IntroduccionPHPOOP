@@ -30,7 +30,7 @@ class Automovil extends Transporte implements TransporteInterfaz { // El polimor
     }
 
     public function getColor() : string { // Podemos agregar métodos las clases hijas y no hay problema que no este en la interface de la clase padre
-        return 'El color es ' . $this->color ;
+        return 'El color es ' . $this->color;
     }
 }
 
